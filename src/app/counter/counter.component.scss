@@ -1,0 +1,28 @@
+@import 'variables';
+
+main {
+    display: block;
+    padding: $double-gap;
+
+    mat-chip {
+        font-weight: bold;
+        font-size: 4em;
+        margin: $double-gap calc(2 * $double-gap);
+        display: inline-grid;
+        height: $default-width-height;
+        padding: $default-gap;
+    }
+
+    .actions {
+        display: flex;
+        gap: $default-gap;
+        margin-top: $double-gap;
+
+        button {
+            padding: $default-gap;
+            width: $default-width-height;
+            height: $default-width-height;
+            font-size: 3em;
+        }
+    }
+}

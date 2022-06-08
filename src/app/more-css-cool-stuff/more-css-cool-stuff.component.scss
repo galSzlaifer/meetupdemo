@@ -1,0 +1,47 @@
+@import  'variables';
+
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    border: 0;
+}
+div{
+    width: $default-width-height;
+    height: $default-width-height;
+    margin: $double-gap;
+    margin-bottom: calc(2 * $double-gap);
+    padding:$double-gap;
+    border: rgb(17, 0, 255) 2px solid;
+}
+.shadow{
+    box-shadow: 11px 8px white;
+
+}
+.animated{
+    animation:spin 10s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.gradient{
+    background: linear-gradient(126deg, red 0%, blue 100%);
+}
+.animation {
+  background-color: rgb(153, 0, 255);
+  position: relative;
+  animation: moveingelement 8s linear 2s infinite alternate;
+}
+
+@keyframes moveingelement {
+  0%   {background-color:rgb(153, 0, 255); left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:rgb(153, 0, 255); left:0px; top:0px;}
+}

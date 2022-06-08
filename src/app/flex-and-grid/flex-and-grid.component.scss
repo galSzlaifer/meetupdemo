@@ -1,0 +1,33 @@
+@import  'variables';
+
+fieldset {
+    margin: $double-gap;
+}
+
+.grid-box,
+.flex-box {
+    gap: $default-gap;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: $double-width-height;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    height: $double-width-height;
+}
+
+li {
+    list-style: none;
+    width: $default-width-height;
+    height: $default-width-height;
+    background-color: rgb(194, 24, 91);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
