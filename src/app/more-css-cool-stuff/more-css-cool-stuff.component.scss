@@ -33,6 +33,12 @@ div {
 }
 
 @keyframes moving-element {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
     0% {
         background-color: rgb(153, 0, 255);
         left: 0px;
@@ -63,3 +69,4 @@ div {
         top: 0px;
     }
 }
+
