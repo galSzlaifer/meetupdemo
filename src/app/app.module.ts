@@ -29,6 +29,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import { MoreCssCoolStuffComponent } from './more-css-cool-stuff/more-css-cool-stuff.component';
 import { CounterComponent } from './counter/counter.component';
+import { YnetComponent } from './ynet/ynet.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CounterComponent } from './counter/counter.component';
     FlexAndGridComponent,
     DialogOverviewExampleDialog,
     MoreCssCoolStuffComponent,
-    CounterComponent
+    CounterComponent,
+    YnetComponent
   ],
   imports: [
     BrowserModule,
