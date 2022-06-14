@@ -29,19 +29,18 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import { MoreCssCoolStuffComponent } from './more-css-cool-stuff/more-css-cool-stuff.component';
 import { CounterComponent } from './counter/counter.component';
-import { YnetComponent } from './ynet/ynet.component';
+import { IframeDemoComponent } from './iframe-demo/iframe-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddresFormComponent,
-
     NavigationDemoComponent,
     FlexAndGridComponent,
     DialogOverviewExampleDialog,
     MoreCssCoolStuffComponent,
     CounterComponent,
-    YnetComponent
+    IframeDemoComponent
   ],
   imports: [
     BrowserModule,

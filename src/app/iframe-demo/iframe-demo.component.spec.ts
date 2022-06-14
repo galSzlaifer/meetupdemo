@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { YnetComponent } from './ynet.component';
+import { IframeDemoComponent } from './iframe-demo.component';
 
-describe('YnetComponent', () => {
-  let component: YnetComponent;
-  let fixture: ComponentFixture<YnetComponent>;
+describe('IframeDemoComponent', () => {
+  let component: IframeDemoComponent;
+  let fixture: ComponentFixture<IframeDemoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ YnetComponent ]
+      declarations: [ IframeDemoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(YnetComponent);
+    fixture = TestBed.createComponent(IframeDemoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
