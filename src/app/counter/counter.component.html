@@ -5,4 +5,40 @@
         <button mat-raised-button (click)="add()">+</button>
         <button mat-raised-button (click)="subtract()">-</button>
     </div>
+  <div class="actions">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input matStartDate placeholder="Start date">
+        <input matEndDate placeholder="End date">
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+  </div>
+  <p>-------------------------------------------------------------------------------</p>
+  <div class="container">
+    <div>
+      <label>single day selection</label>
+      <div class="calendar-card">
+        <mat-calendar #calendarOne [(selected)]="pikedDate"></mat-calendar>
+      </div>
+      <p>Selected date: {{pikedDate}}</p>
+    </div>
+  <div>
+    <label>week selection</label>
+      <div class="calendar-card">
+        <mat-calendar #calendarTwo
+                      [selected]="pikedRange"
+                      (viewChanged)="onViewCalendarChanged($event)"
+                      (selectedChange)="onWeekChange($event)"></mat-calendar>
+      </div>
+      <p>Selected week: {{pikedRange.start | date:'short':'ISO'}}</p>
+      <p>Selected week: {{pikedRange.end | date:'short':'ISO'}}</p>
+    <button mat-raised-button (click)="clearWeekselection()">Clear week selection</button>
+    </div>
+
+  </div>
+
 </main>
