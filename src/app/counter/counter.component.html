@@ -34,8 +34,8 @@
                       (viewChanged)="onViewCalendarChanged($event)"
                       (selectedChange)="onWeekChange($event)"></mat-calendar>
       </div>
-      <p>Selected week: {{pikedRange.start | date:'short':'ISO'}}</p>
-      <p>Selected week: {{pikedRange.end | date:'short':'ISO'}}</p>
+      <p>Selected week start: {{pikedRange.start | date:'short':'ISO'}}</p>
+      <p>Selected week end: {{pikedRange.end | date:'short':'ISO'}}</p>
     <button mat-raised-button (click)="clearWeekselection()">Clear week selection</button>
     </div>
 
